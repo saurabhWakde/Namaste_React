@@ -6,9 +6,10 @@ const Body = () => {
   const [data,setData] =useState([]);
   const[veg,setVeg] =useState([]);
 const [nonveg,setNonveg] =useState([]);
+const [filterd,setFiltered]=useState([]);
   const [searchText,setSearchText] = useState("");
+  const [viewall,setViewall]=useState([]);
 
-  console.log("body rendered")
   useEffect(()=>
   {
  fetchData();
@@ -21,6 +22,8 @@ const res = await data.json();
 setData(res.data.cards);
 setVeg(res.data.cards)
 setNonveg(res.data.cards)
+setFiltered(res.data.cards)
+setViewall(res.data.cards);
 
 
   } 
@@ -35,7 +38,20 @@ setNonveg(res.data.cards)
         <div className='filter'>
         <div className='search'>
 <input type='text' style={{outline:"none",marginRight:"5px"}} className='search-bocx' placeholder='Find restaurant' value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}></input>
-<button className='search-btn ' onClick={()=>{console.log(searchText)}}>Search</button>
+<button className='search-btn ' onClick={()=>{ const filteredres = data.filter((elem)=>
+  {
+    return(
+ elem.data.data.name.toLowerCase().includes(searchText)
+ 
+
+    )
+  })
+ setFiltered(filteredres)
+ console.log(searchText);
+ console.log(filteredres);
+}
+
+}>Search</button>
 </div>
        <button className='filter_btn' onClick={()=>{
 
@@ -46,25 +62,31 @@ setNonveg(res.data.cards)
           )
         })
        
-        setData(filtereddata);
+        setFiltered(filtereddata);
        }}>Top Rated</button>
 
        <button  className='filter_btn' style={{backgroundColor:"green"}} onClick={()=>
       {
-        let filterveg =veg.filter((elem)=> elem.data.data.veg===true)
-        setData(filterveg)
+        let filterveg =data.filter((elem)=> elem.data.data.veg===true)
+        setFiltered(filterveg)
       }}>Sort by Veg</button>
 
       <button  className='filter_btn' style={{backgroundColor:"red"}} onClick={()=>
         {
-          let filterNonveg =nonveg.filter((elem)=> elem.data.data.veg===false)
-          setData(filterNonveg)
-        }}>Sort by Non-veg</button> 
+          let filterNonveg =data.filter((elem)=> elem.data.data.veg===false)
+          setFiltered(filterNonveg)
+        }}>Sort by Non-veg</button>
+        
+        <button  className='filter_btn' style={{backgroundColor:"teal"}} onClick={()=>
+          {
+            
+            setFiltered(data);
+          }}>Showall</button>
         </div>
 
         <div className='res_container'>
         {
-            data.map((Elem)=>
+            filterd.map((Elem)=>
             {
 
                return(
