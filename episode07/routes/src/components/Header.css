@@ -1,0 +1,94 @@
+.header
+{
+  display: flex; 
+  justify-content: space-between; 
+  border:solid 1px ;
+  width: 98%;
+  margin: auto;
+}
+.navitems>ul{
+    display: flex;
+    list-style: none;
+
+ 
+}
+.navitems>ul>li
+{
+    padding: 20px;;
+
+}
+.res_container
+{
+     
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  
+}
+.res_card
+{
+    height: 300px;
+    width: 200px;
+    padding: 5px;
+    cursor: pointer;
+    background-color:cadetblue;
+    margin: 10px 20px 0px 0px;
+    border-radius: 5px;
+    color: whitesmoke;
+   
+
+
+}
+a{
+    text-decoration: none;
+}
+.res_card:hover
+{
+    border: solid 1px teal;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.res_logo{
+    width: 100%;
+    border-radius: 0.5rem;
+    border:solid 0.1rem white
+}
+.logo
+{
+    width: 20%;
+  padding: 0;
+  margin: 0;
+}
+.filter_btn
+{
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+   margin: 10px;
+
+}
+.res_shimmer
+{
+    height: 300px;
+    width: 200px;
+    padding: 5px;
+    cursor: pointer;
+    background-color:rgb(214, 204, 204);
+    margin: 10px 20px 0px 0px;
+    border-radius: 5px;
+
+}
+.res_shimmer > button
+{
+   display: flex;
+    background-color: grey;
+    margin-bottom: 20px;
+    width: 80%;
+    border:none;
+    padding: 10px;
+    border-radius: 10px;
+}
