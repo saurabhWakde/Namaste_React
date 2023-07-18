@@ -23,7 +23,7 @@ const appRouter =createBrowserRouter([
       },
       {
         path : "/about",
-        element :<About/> ,
+        element :<About name="saurabh"  location="Maharastra" contact="8308645619" /> ,
       },
       {
         path : "/contact",

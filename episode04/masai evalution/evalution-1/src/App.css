@@ -1,0 +1,11 @@
+  /* Styles for the selected option */
+  .options button.bgGreen {
+    background-color: #28a745;
+    color: #fff;
+  }
+
+  /* Styles for the incorrect option */
+  .options button.bgRed {
+    background-color: #dc3545;
+    color: #fff;
+  }

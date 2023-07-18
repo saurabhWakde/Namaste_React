@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "question": "What is React?",
+    "options": [
+      "A JavaScript framework for building user interfaces.",
+      "A programming language.",
+      "A database management system.",
+      "A server-side scripting language."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 2,
+    "question": "What is JSX?",
+    "options": [
+      "A file format used for storing React components.",
+      "A programming language for building user interfaces.",
+      "JavaScript XML, a syntax extension for JavaScript.",
+      "A styling language for React applications."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of state in React?",
+    "options": [
+      "To store and manage data within a component.",
+      "To handle component rendering and lifecycle.",
+      "To define the structure of a React component.",
+      "To manage routing and navigation in React applications."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 4,
+    "question": "What is a React component?",
+    "options": [
+      "A JavaScript function that renders HTML.",
+      "A reusable, self-contained piece of UI.",
+      "A CSS file used for styling React applications.",
+      "A built-in HTML element in React."
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "id": 5,
+    "question": "What is the virtual DOM in React?",
+    "options": [
+      "A virtual reality interface for React applications.",
+      "A data structure used to store React component state.",
+
+      "A component that handles DOM events in React.",
+      "A lightweight representation of the actual DOM."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 6,
+    "question": "What are React hooks?",
+    "options": [
+      "Functions that add additional functionality to React components.",
+      "Special tags used for styling React components.",
+      "Components used to handle form inputs in React.",
+      "Methods for manipulating the DOM directly in React."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 7,
+    "question": "What is the purpose of the useEffect hook in React?",
+    "options": [
+      "To define the initial state of a React component.",
+      "To handle user interactions in React applications.",
+      "To manage routing and navigation in React.",
+      "To perform side effects in React components."
+    ],
+    "correctOptionIndex": 3
+  },
+  {
+    "id": 8,
+    "question": "What is the purpose of the props object in React?",
+    "options": [
+      "To store and manage state within a component.",
+      "To define the structure and styling of a component.",
+      "To pass data from a parent component to a child component.",
+      "To handle asynchronous operations in React."
+    ],
+    "correctOptionIndex": 2
+  },
+  {
+    "id": 9,
+    "question": "What are the key features of React?",
+    "options": [
+      "Component-based architecture, Virtual DOM, and JSX.",
+      "Server-side rendering and two-way data binding.",
+      "Static typing and dependency injection.",
+      "Asynchronous programming and event-driven design."
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "id": 10,
+    "question": "What is the significance of Virtual DOM in React?",
+    "options": [
+      "Virtual DOM is a performance optimization technique in React to improve rendering speed.",
+      "Virtual DOM allows React to work with 3D graphics and virtual reality.",
+      "Virtual DOM provides a virtual environment for testing React components.",
+      "Virtual DOM helps in managing state and data flow in React applications."
+    ],
+    "correctOptionIndex": 0
+  }
+]
